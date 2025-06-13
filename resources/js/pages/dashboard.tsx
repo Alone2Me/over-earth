@@ -18,7 +18,7 @@ export default function Dashboard() {
                 <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
                     <CardsStats />
                 </div>
-                <div className="relative flex-1 overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border">
+                <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
                     <CardsExerciseMinutes />
                 </div>
             </div>
