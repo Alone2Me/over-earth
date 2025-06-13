@@ -15,15 +15,21 @@ export default function Dashboard() {
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Dashboard" />
-            <div className="flex h-full flex-1 flex-col gap-4 overflow-x-auto rounded-xl p-4">
-                <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+            <div className="flex h-full flex-1 flex-col gap-6 overflow-x-auto p-4">
+                {/* Stats Cards – 1 column on small, 2 on medium, 4 on extra large screens */}
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
                     <CardsStats />
                 </div>
-                <div className="grid gap-4 xl:grid-cols-2">
+
+                {/* Exercise Minutes – 1 column on small, 2 on extra large */}
+                <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
                     <CardsExerciseMinutes />
                 </div>
 
-                <CardsPayments />
+                {/* Payments – full width */}
+                <div className="w-full">
+                    <CardsPayments />
+                </div>
             </div>
         </AppLayout>
     );
