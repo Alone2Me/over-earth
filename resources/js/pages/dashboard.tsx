@@ -19,12 +19,11 @@ export default function Dashboard() {
                 <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
                     <CardsStats />
                 </div>
-                <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+                <div className="grid gap-4 xl:grid-cols-2">
                     <CardsExerciseMinutes />
                 </div>
 
                 <CardsPayments />
-                
             </div>
         </AppLayout>
     );
